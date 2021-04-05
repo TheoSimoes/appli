@@ -1,0 +1,16 @@
+<div class="container">
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let quote of quotes" [value]="quote">
+      {{quote.quote}}
+    </mat-option>
+  </mat-autocomplete>
+</div>
+
+<input type="text"
+       placeholder="Search"
+       aria-label="Number"
+       matInput
+       [matAutocomplete]="auto">
+
+
+       
